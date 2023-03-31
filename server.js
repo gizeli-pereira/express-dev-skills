@@ -16,7 +16,6 @@ app.set('view engine', 'ejs');
 
 // add middleware below the above line of code
 app.use(function(req, res, next) {
-  console.log('Hello SEI');
   //Add time property
   res.locals.time = new Date().toLocaleTimeString();
   next(); //Pass the request to the middleware
